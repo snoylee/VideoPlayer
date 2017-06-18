@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cumstom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animationCache="false"
+   >
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/ac_bar_height"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/ac_bar_bg"
+        >
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/ac_bar_menu_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ac_back"/>
+
+        <TextView
+            android:id="@+id/shouye"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:textAppearance="@style/acTxt1"
+            android:text="首页"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textAppearance="@style/acTxt2"
+            android:text="设置"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/setting_list"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_below="@id/title_layout"
+        android:layout_margin="24dp"
+        android:layout_alignParentLeft="false" />
+
+>
+      <Button
+          android:layout_width="138dp"
+          android:layout_height="wrap_content"
+          android:textSize="14sp"
+          android:background="@drawable/button_login"
+          android:id="@+id/Bt"
+          android:layout_alignParentBottom="true"
+          android:layout_centerHorizontal="true"
+          android:layout_below="@+id/setting_list"
+          android:layout_marginBottom="12dp"
+          android:layout_margin="12dp"
+          android:layout_marginTop="4dp" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <EditTextPreference
+        android:dialogMessage="Please Input text"
+        android:dialogTitle="Edit Text Dialog"
+        android:key="edittext_key"
+        android:summary="test edittext item"
+        android:title="EditText Item"></EditTextPreference>
+
+</PreferenceScreen>

@@ -1,0 +1,38 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 14
+    buildToolsVersion '20.0.0'
+    defaultConfig {
+        applicationId "com.vcooline.li.videoplayer"
+        minSdkVersion 14
+        targetSdkVersion 17
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile files('libs/cyberplayer-sdk.jar')
+    compile files('libs/android-query-full.0.26.7.jar')
+    compile project(':library')
+    compile project(':galley_library')
+    // You must install or update the Support Repository through the SDK manager to use this dependency.
+    // You must install or update the Support Repository through the SDK manager to use this dependency.
+    // You must install or update the Support Repository through the SDK manager to use this dependency.
+    compile project(':StickGridViewLibrary')
+    compile files('libs/android-support-v4.jar')
+}
+
+
+
+

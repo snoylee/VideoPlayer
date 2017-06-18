@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="275dp"
+        android:layout_height="200dp"
+        android:background="@drawable/big_pic_frame"/>
+
+    <TextView
+        android:id="@+id/work_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image"
+        android:layout_marginLeft="20dp"
+        />
+
+    <TextView
+        android:id="@+id/update_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image"
+        android:layout_below="@id/work_name"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/view_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/update_time"
+        android:layout_alignParentRight="true"
+        android:text="查看全部》》"/>
+    
+    <TextView
+        android:id="@+id/teacher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image"
+        android:layout_below="@id/update_time"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:text="老师点评："/>
+
+    <TextView
+        android:id="@+id/comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/image"
+        android:layout_below="@id/teacher"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="3"
+        />
+    
+</RelativeLayout>

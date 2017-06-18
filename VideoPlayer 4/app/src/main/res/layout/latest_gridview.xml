@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+	
+    <com.vcooline.li.videoplayer.tools.view.CategoryGridView
+        android:id="@+id/GridView_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:listSelector="@color/transparent"
+        android:numColumns="4"
+        android:verticalSpacing="20dp"
+        android:horizontalSpacing="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+    </com.vcooline.li.videoplayer.tools.view.CategoryGridView>
+</LinearLayout>

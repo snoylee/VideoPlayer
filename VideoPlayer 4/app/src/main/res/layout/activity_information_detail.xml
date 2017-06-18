@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/ac_bar_height"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ac_bar_bg">
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="@dimen/ac_bar_menu_width"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/ac_back"/>
+
+            <TextView
+                android:id="@+id/shouye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/back"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:textAppearance="@style/acTxt1"
+                android:text="首页"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textAppearance="@style/acTxt2"
+                android:text="艺考咨询"/>
+        </RelativeLayout>
+
+         <TextView
+             android:id="@+id/content_title"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/title_layout"
+             android:layout_centerHorizontal="true"
+             android:textSize="18sp"
+             android:textStyle="bold"
+             android:layout_marginTop="30dp"/>
+
+        <TextView
+            android:id="@+id/content_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/content_title"
+            android:layout_margin="50dp"/>
+
+</RelativeLayout>

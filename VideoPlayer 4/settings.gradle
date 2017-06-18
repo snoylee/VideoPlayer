@@ -1,0 +1,3 @@
+include ':app', ':StickGridViewLibrary'
+include ':library'
+include ':galley_library'

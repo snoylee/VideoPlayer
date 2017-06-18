@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:TabButton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerInParent="true">
+        <com.vcooline.li.videoplayer.tools.TabButton
+            android:id="@+id/shuixiang"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tab_button_height"
+            TabButton:type="LEFT"
+            android:textSize="@dimen/tab_button_text_size"
+            android:text="水乡"/>
+        <com.vcooline.li.videoplayer.tools.TabButton
+            android:id="@+id/xiaoxiang"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tab_button_height"
+            TabButton:type="MID"
+            android:textSize="@dimen/tab_button_text_size"
+            android:text="小巷"/>
+
+        <com.vcooline.li.videoplayer.tools.TabButton
+            android:id="@+id/ziran"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tab_button_height"
+            android:layout_marginLeft="-1dp"
+            TabButton:type="MID"
+            android:textSize="@dimen/tab_button_text_size"
+            android:text="自然风景"/>
+
+        <com.vcooline.li.videoplayer.tools.TabButton
+            android:id="@+id/chengshi"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/tab_button_height"
+            TabButton:type="RIGHT"
+            android:textSize="@dimen/tab_button_text_size"
+            android:text="城市风光"/>
+    </LinearLayout>
+</RelativeLayout>

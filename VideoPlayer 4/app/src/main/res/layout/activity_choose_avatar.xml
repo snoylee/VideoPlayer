@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/translucent">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/button_close"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"/>
+    <RelativeLayout
+        android:id="@+id/content"
+        android:layout_width="527dp"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true">
+        <LinearLayout
+            android:id="@+id/lior"
+            android:layout_width="420dp"
+            android:layout_height="360dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignWithParentIfMissing="false"
+            android:background="@color/blue">
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="420dp"
+                android:layout_height="360dp"
+                android:background="@drawable/icon_13"
+                />
+            </LinearLayout>
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="107dp"
+            android:layout_height="100dp"
+            android:src="@drawable/choose_image"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@id/lior"
+            android:paddingLeft="2dp" />
+
+        <ImageView
+            android:id="@+id/camera"
+            android:layout_width="107dp"
+            android:layout_height="100dp"
+            android:src="@drawable/choose_camera"
+            android:layout_below="@id/image"
+            android:layout_toRightOf="@id/lior"
+            android:paddingLeft="2dp"
+            android:paddingTop="1dp" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lior"
+            android:layout_alignLeft="@id/lior"
+            android:layout_alignRight="@id/lior"
+            android:text="确定"
+            android:textColor="@color/all_white"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="25dp" />
+    </RelativeLayout>
+</RelativeLayout>

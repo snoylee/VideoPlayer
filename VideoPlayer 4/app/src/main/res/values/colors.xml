@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="transparent">#00000000</color>
+    <color name="all_white">#FFFFFF</color>
+    <color name="all_black">#000000</color>
+    <color name="blue">#ADD8E6</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="translucent">#90000000</color>
+    <color name="bottom_color">#ADD8E6</color>
+    <color name="tab_button_text_select_color">#87CEEB</color>
+    <color name="page_head_unselected_color">#000000</color>
+    <color name="page_head_selected_color">#87CEEB</color>
+</resources>

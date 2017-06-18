@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/viewpagerimagelay"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center">
+    <com.vcooline.li.videoplayer.tools.ScaleImageView
+        android:id="@+id/viewpagerimage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+        />
+</LinearLayout>
